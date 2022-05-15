@@ -4,6 +4,5 @@
 Anetaret e grupit 8:
 
 - Aulona Limani
-- Avdulla Haliti
 - Besarta Kurtaj
 - Dredhza Braina
