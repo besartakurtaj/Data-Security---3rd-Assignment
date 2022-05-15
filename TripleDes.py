@@ -8,3 +8,5 @@ while True:
     operation = input('Your choice:')
     if operation not in ['1', '2']:
         break
+    file_path = input('File path: ')
+    key = input('TDES key: ')
