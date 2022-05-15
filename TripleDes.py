@@ -23,7 +23,8 @@ key_hash = md5(key.encode('ascii')).digest()
 
         if operation == '1':
             new_file_bytes = cipher.encrypt(file_bytes)
-       
+         else:
+            new_file_bytes = cipher.decrypt(file_bytes)
     
     with open(file_path, 'wb') as output_file:
         output_file.write(new_file_bytes)
