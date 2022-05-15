@@ -17,8 +17,13 @@ key_hash = md5(key.encode('ascii')).digest()
     cipher = DES3.new(tdes_key, DES3.MODE_EAX, nonce = b'0')
     
     
-    
+    with open(file_path, 'rb') as input_file:
+        file_bytes = input_file.read()
 
+
+        if operation == '1':
+            new_file_bytes = cipher.encrypt(file_bytes)
+       
     
     with open(file_path, 'wb') as output_file:
         output_file.write(new_file_bytes)
